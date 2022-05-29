@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid 2</title>
+    <style>
+        .area>div{
+            border: 1px solid red;background-color:#454544;border-color: brown ;display: flex;align-items: center;justify-content: center;border-radius: 5%;
+        }
+        .area{
+ display:grid;grid-template-columns: repeat(4,200px);
+   grid-template-rows: repeat(2,200px);gap: 20px;
+   grid-template-areas: "a a b e"
+                        "c d b e"
+                         ; padding-left: 450px;padding-top: 250px; 
+
+        }
+        .area>div:nth-child(1)
+        {
+            grid-area: a;
+            color: aliceblue;
+            font-size: xx-large;font-weight: bolder;
+        } 
+        .area>div:nth-child(2)
+ {
+     grid-area: b;
+     color: aliceblue;
+  font-size: xx-large;font-weight: bolder;
+ }       
+ .area>div:nth-child(3)
+ {
+     grid-area: c;
+     color: aliceblue;
+  font-size: xx-large;font-weight: bolder;
+ }
+ .area>div:nth-child(4)
+ {
+     grid-area: d;  color: aliceblue;
+  font-size: xx-large;font-weight: bolder;
+ }
+ .area>div:nth-child(5)
+ {
+     grid-area: e;  color: aliceblue;
+  font-size: xx-large;font-weight: bolder;
+ }
+    </style>
+
+
+
+</head>
+<body>
+    <div class="area">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </div>
+    
+</body>
+</html>

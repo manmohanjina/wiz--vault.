@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .sos>div{
+            border: 1px solid forestgreen;background-color:green;border-radius: 10%;display: flex;justify-content: center;align-items: center;
+        }
+        .sos{
+            display: grid;grid-template-columns: repeat(4,100px);
+            grid-template-rows: repeat(3,300);gap:20px;grid-template-areas: "a b b c"
+                                  "d d e f"
+                                  "g h i i";padding-left: 400px;padding-top: 300px;
+                                  width: auto;
+        }
+        .sos>div:nth-child(1)
+        {
+            grid-area: a;justify-content:last baseline;
+        }
+        .sos>div:nth-child(2)
+{
+    grid-area: b;
+}
+.sos>div:nth-child(3)
+{
+    grid-area: c;
+}
+.sos>div:nth-child(4)
+{
+    grid-area: d;
+}
+.sos>div:nth-child(5)
+{
+    grid-area: e;
+}
+.sos>div:nth-child(6)
+{
+    grid-area: f;
+}
+.sos>div:nth-child(7)
+{
+    grid-area: g;
+}
+.sos>div:nth-child(8)
+{
+    grid-area: h;
+}
+.sos>div:nth-child(9)
+{
+    grid-area: i;
+}
+    </style>
+   
+   
+   
+    <title>Msai grid</title>
+</head>
+<body>
+    <div class="sos">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    
+</body>
+</html>
